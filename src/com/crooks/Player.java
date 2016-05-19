@@ -15,7 +15,7 @@ public class Player {
     public void chooseName(){
 
         System.out.println("What is your name?\n");
-        name = Main.scanner.nextLine();
+        name = Main.nextLine();
         System.out.println("Hello, " + name);
 
     }
@@ -23,7 +23,7 @@ public class Player {
     public void chooseWeapon() throws Exception {
 
         System.out.println("Choose your weapon [sword/mace/staff]");
-        weapon = Main.scanner.nextLine();
+        weapon = Main.nextLine();
 
         if (weapon.equalsIgnoreCase("sword")){
             System.out.println("Watch the pointy side, it's dangerous");
@@ -38,7 +38,7 @@ public class Player {
 
     public void chooseLocation() throws Exception {
         System.out.println("Choose your Location [forest/tunnel]");
-        location = Main.scanner.nextLine();
+        location = Main.nextLine();
         if (location.equalsIgnoreCase("forest")){
             System.out.println("entering the dense forests of James Island");
         } else if (location.equalsIgnoreCase("tunnel")){
@@ -50,7 +50,7 @@ public class Player {
 
     public void findItem(String item){
         System.out.println("You Stumble upon some something in the dark. Pick it up? [y/n]");
-        String answer = Main.scanner.nextLine();
+        String answer = Main.nextLine();
         if (answer.equalsIgnoreCase("y")){
             items.add(item);
             System.out.println("you picked up " + item + "! You now have " + items.size() + " items in your inventory.");

@@ -1,5 +1,6 @@
 package com.crooks;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -9,11 +10,12 @@ public class Player {
     String name;
     String weapon;
     String location;
+    ArrayList<String> items = new ArrayList<String>();
 
     public void chooseName(){
 
         System.out.println("What is your name?\n");
-        String name = Main.scanner.nextLine();
+        name = Main.scanner.nextLine();
         System.out.println("Hello, " + name);
 
     }
@@ -21,7 +23,7 @@ public class Player {
     public void chooseWeapon() throws Exception {
 
         System.out.println("Choose your weapon [sword/mace/staff]");
-        String weapon = Main.scanner.nextLine();
+        weapon = Main.scanner.nextLine();
 
         if (weapon.equalsIgnoreCase("sword")){
             System.out.println("Watch the pointy side, it's dangerous");
@@ -36,13 +38,22 @@ public class Player {
 
     public void chooseLocation() throws Exception {
         System.out.println("Choose your Location [forest/tunnel]");
-        String location = Main.scanner.nextLine();
+        location = Main.scanner.nextLine();
         if (location.equalsIgnoreCase("forest")){
             System.out.println("entering the dense forests of James Island");
         } else if (location.equalsIgnoreCase("tunnel")){
             System.out.println("you have entered the labryinth of sewers deep below Charleston. It does not smell great.");
         }else{
             throw new Exception("Invalid Location!");
+        }
+    }
+
+    public void findItem(String item){
+        System.out.println("You Stumble upon some something in the dark. Pick it up? [y/n]");
+        String answer = Main.scanner.nextLine();
+        if (answer.equalsIgnoreCase("y")){
+            items.add(item);
+            System.out.println("you picked up " + item + "! You now have " + items.size() + " items in your inventory.");
         }
     }
 }

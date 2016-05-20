@@ -1,6 +1,7 @@
 package com.crooks;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
 
 /**
@@ -11,6 +12,7 @@ public class Player {
     String weapon;
     String location;
     ArrayList<String> items = new ArrayList<String>();
+
 
     public void chooseName(){
 

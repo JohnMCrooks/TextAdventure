@@ -18,7 +18,7 @@ public class Player {
 
         System.out.println("What is your name?\n");
         name = Main.nextLine();
-        System.out.println("Hello, " + name);
+        System.out.printf("Hello, %s", name);
 
     }
 
@@ -51,11 +51,11 @@ public class Player {
     }
 
     public void findItem(String item){
-        System.out.println("You Stumble upon some something in the dark. Pick it up? [y/n]");
+        System.out.printf("You Stumble upon some something in the dark. Pick it up? [y/n]");
         String answer = Main.nextLine();
         if (answer.equalsIgnoreCase("y")){
             items.add(item);
-            System.out.println("you picked up " + item + "! You now have " + items.size() + " items in your inventory.");
+            System.out.printf("you picked up %s! \n You now have %s items in your inventory.\n", item, items.size());
         }
     }
 }

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bbec04d3-f360-4775-a3de-ddf745aa2a5f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/crooks/Player.java" afterPath="$PROJECT_DIR$/src/com/crooks/Player.java" />
     </list>
     <ignored path="TextAdventure.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -425,7 +424,14 @@
       <option name="project" value="LOCAL" />
       <updated>1463673526244</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added custom scanner that looks for &quot;console commands&quot;- In Class Day 4">
+      <created>1464101248621</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1464101248621</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">

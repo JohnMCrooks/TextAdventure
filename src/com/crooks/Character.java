@@ -13,8 +13,8 @@ public class Character {
         while (enemy.health >0 && this.health >0){
             this.health -= enemy.damage;
             enemy.health -= this.damage;
-            System.out.printf(" %s's health: %s\n", this.name, this.health);
-            System.out.printf(" %s's health: %s\n", enemy.name, enemy.health);
+            System.out.printf("%s's health: %s\n", this.name, this.health);
+            System.out.printf("%s's health: %s\n", enemy.name, enemy.health);
         }
         if (this.health <=0){
             System.out.println("You have died");

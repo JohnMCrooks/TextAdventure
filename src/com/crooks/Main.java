@@ -13,6 +13,7 @@ public class Main {
         p1.chooseName();
         p1.chooseWeapon();
         p1.chooseLocation();
+
         p1.findItem("Armor");
         p1.findItem("potion");
 

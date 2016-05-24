@@ -22,7 +22,7 @@ public class Player extends Character {
 
         System.out.println("What is your name?\n");
         name = Main.nextLine();
-        System.out.printf("Hello, %s", name);
+        System.out.printf("Hello, %s\n", name);
 
     }
 

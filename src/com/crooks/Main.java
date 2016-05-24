@@ -19,6 +19,8 @@ public class Main {
         Enemy ogre = new Enemy("Ogre", 10, 10);
 
         p1.battle(ogre);
+        System.out.println("\n" + p1);
+        System.out.println("\n" + ogre);
 
     }
 

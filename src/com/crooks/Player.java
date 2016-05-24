@@ -7,12 +7,16 @@ import java.util.Scanner;
 /**
  * Created by johncrooks on 5/18/16.
  */
-public class Player {
-    String name;
+public class Player extends Character {
     String weapon;
     String location;
+
     ArrayList<String> items = new ArrayList<String>();
 
+    public Player() {
+        this.health = 20;
+        this.damage = 20;
+    }
 
     public void chooseName(){
 
@@ -55,7 +59,7 @@ public class Player {
         String answer = Main.nextLine();
         if (answer.equalsIgnoreCase("y")){
             items.add(item);
-            System.out.printf("you picked up %s! \n You now have %s items in your inventory.\n", item, items.size());
+            System.out.printf("you picked up %s! \n You now have %s items in your inventory.\n\n", item, items.size());
         }
     }
 }

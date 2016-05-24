@@ -16,17 +16,9 @@ public class Main {
         p1.findItem("Armor");
         p1.findItem("potion");
 
-//        System.out.println("type a number");
-//        String num = scanner.nextLine();
-//        int num1 = Integer.valueOf(num);
-//
-//        if (num1<0){
-//            System.out.println("That's a negative number.");
-//        }else if (num1>=0){
-//            System.out.println("that's a positive number!");
-//        }else {
-//            throw new Exception("Dude, come on.  that's not a number...");
-//        }
+        Enemy ogre = new Enemy("Ogre", 10, 10);
+
+        p1.battle(ogre);
 
     }
 

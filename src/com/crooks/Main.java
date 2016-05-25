@@ -1,6 +1,12 @@
 package com.crooks;
 
+import jodd.json.JsonSerializer;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
+
 
 public class Main {
 
@@ -20,10 +26,9 @@ public class Main {
         Enemy ogre = new Enemy("Ogre", 10, 10);
 
         p1.battle(ogre);
-        System.out.println("\n" + p1);
-        System.out.println("\n" + ogre);
 
     }
+
 
     public static String nextLine(){
         String line = scanner.nextLine();
@@ -32,6 +37,9 @@ public class Main {
                 for ( String item : p1.items) {
                     System.out.println(item);
                 }
+            }else if(line.equals("/save")){
+                saveGame();
+                System.out.println("Your Game has Been Saved Succesfully!");
             }
             else {
                 System.out.println("Command not found.");
@@ -40,6 +48,22 @@ public class Main {
             line = scanner.nextLine();
         }
         return line;
+    }
+
+    public static void saveGame() {
+        JsonSerializer  serializer = new JsonSerializer();
+        String json = serializer.include("*").serialize(p1);
+
+        File f = new File("game.json");
+        try {
+            FileWriter fw = new FileWriter(f);
+            fw.write(json);
+            fw.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 
 

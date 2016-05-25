@@ -18,6 +18,18 @@ public class Player extends Character {
         this.damage = 20;
     }
 
+    public String getWeapon() {
+        return weapon;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public ArrayList<String> getItems() {
+        return items;
+    }
+
     public void chooseName(){
 
         System.out.println("What is your name?\n");

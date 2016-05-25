@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbec04d3-f360-4775-a3de-ddf745aa2a5f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TextAdventure/com/crooks/Main.class" afterPath="$PROJECT_DIR$/out/production/TextAdventure/com/crooks/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TextAdventure/com/crooks/Player.class" afterPath="$PROJECT_DIR$/out/production/TextAdventure/com/crooks/Player.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/crooks/Main.java" afterPath="$PROJECT_DIR$/src/com/crooks/Main.java" />
     </list>
@@ -30,8 +28,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/crooks/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
+            <state relative-caret-position="285">
+              <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -618,7 +616,14 @@
       <option name="project" value="LOCAL" />
       <updated>1464188629729</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Week 2 Day 3:&#10;Added Load Feature Using Json">
+      <created>1464189880422</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1464189880422</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -643,7 +648,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1167" height="1173" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293247" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -719,14 +724,15 @@
     <MESSAGE value="Override toString()" />
     <MESSAGE value="Add JUnit test for battle method" />
     <MESSAGE value="Week 2 Day 3:&#10;Added Save command&#10;Using jodd Json library wrote to external file to save character state" />
-    <option name="LAST_COMMIT_MESSAGE" value="Week 2 Day 3:&#10;Added Save command&#10;Using jodd Json library wrote to external file to save character state" />
+    <MESSAGE value="Week 2 Day 3:&#10;Added Load Feature Using Json" />
+    <option name="LAST_COMMIT_MESSAGE" value="Week 2 Day 3:&#10;Added Load Feature Using Json" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/crooks/Main.java</url>
-          <line>28</line>
+          <line>32</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
@@ -896,8 +902,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/crooks/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
+        <state relative-caret-position="285">
+          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

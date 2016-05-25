@@ -22,9 +22,13 @@ public class Main {
         if (p1 == null){
             p1 = new Player();
             System.out.println("Starting new game...\n");
+        } else{
+            System.out.println(" Found save file\n Start New Game instead? [y/n]");
+            String answer = scanner.nextLine();
+            if (answer.equalsIgnoreCase("y")){
+                p1 = new Player();
+            }
         }
-
-        System.out.println(" Welcome Traveler!\n");
 
         if (p1.name ==null) p1.chooseName();
         if (p1.weapon == null) p1.chooseWeapon();
@@ -33,9 +37,6 @@ public class Main {
             p1.findItem("Armor");
             p1.findItem("Potion");
         }
-
-
-
 
         Enemy ogre = new Enemy("Ogre", 10, 10);
 

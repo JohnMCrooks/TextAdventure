@@ -18,7 +18,7 @@ public class Main {
 
 
     public static void main(String[] args) throws Exception {
-        p1 = loadGame();
+        p1 = loadGame(SAVE_FILE);
         if (p1 == null){
             p1 = new Player();
             System.out.println("Starting new game...\n");
@@ -41,7 +41,7 @@ public class Main {
         Enemy ogre = new Enemy("Ogre", 10, 10);
 
         p1.battle(ogre);
-
+        saveGame(p1, SAVE_FILE);
     }
 
 
@@ -53,7 +53,7 @@ public class Main {
                     System.out.println(item);
                 }
             }else if(line.equals("/save")){
-                saveGame();
+                saveGame(p1, SAVE_FILE);
                 System.out.println("Your Game has Been Saved Succesfully!");
             }
             else {
@@ -65,11 +65,11 @@ public class Main {
         return line;
     }
 
-    public static void saveGame() {
+    public static void saveGame(Player p1, String filename) {
         JsonSerializer  serializer = new JsonSerializer();
         String json = serializer.include("*").serialize(p1);
 
-        File f = new File(SAVE_FILE);
+        File f = new File(filename);
         try {
             FileWriter fw = new FileWriter(f);
             fw.write(json);
@@ -81,8 +81,8 @@ public class Main {
 
     }
 
-    public static Player loadGame(){
-        File f = new File(SAVE_FILE);
+    public static Player loadGame(String filename){
+        File f = new File(filename);
         try {
             Scanner scanner = new Scanner(f);
             scanner.useDelimiter("\\z");
